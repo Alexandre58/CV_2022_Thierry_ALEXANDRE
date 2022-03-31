@@ -74,7 +74,10 @@ body .container_main .event_container {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 15px;
-  border: 1px solid #0c0c0c;
+  max-width: 850px;
+  margin: auto;
+  -webkit-box-shadow: 1px 1px 41px -5px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 1px 41px -5px rgba(0, 0, 0, 0.8);
 }
 
 body .container_main .event_container .container_aProposDeMoi {
@@ -269,7 +272,9 @@ body .container_sections .section_contact_formation_information .section_article
   text-align: center;
 }
 
-body .container_sections .section_contact_formation_information .section_article_formation p, body .container_sections .section_contact_formation_information .section_article_contact p, body .container_sections .section_contact_formation_information .section_article_information p {
+body .container_sections .section_contact_formation_information .section_article_formation p,
+body .container_sections .section_contact_formation_information .section_article_contact p,
+body .container_sections .section_contact_formation_information .section_article_information p {
   padding: 1em;
 }
 
@@ -304,5 +309,24 @@ body .container_footer .container_footer_div {
 body .container_footer .title_auteur_footer,
 body .container_footer .title_auteur_footer_date {
   color: white;
+}
+
+@media screen and (max-width: 875px) {
+  .event_container {
+    max-width: 600px !important;
+    font-size: 0.8em;
+  }
+  .container_competences_experiences {
+    max-width: 600px !important;
+    padding: 1em;
+  }
+  .section_contact_formation_information {
+    max-width: 600px !important;
+  }
+  .section_contact_formation_information .section_article_formation p,
+  .section_contact_formation_information .section_article_contact p,
+  .section_contact_formation_information .section_article_information p {
+    padding: 0.2em !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
