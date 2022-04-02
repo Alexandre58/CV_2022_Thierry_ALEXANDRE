@@ -397,7 +397,8 @@ body .container_footer .title_auteur_footer_date {
     width: 100% !important;
   }
   .container_main {
-    width: 100% !important;
+    width: 90% !important;
+    margin: auto;
     padding: 0;
   }
   .container_sections {
