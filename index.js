@@ -15,14 +15,14 @@ const containerAProposDeMoi = document.querySelector(".aProposDemoi_p");
 const btn_event_fermer = document.querySelector(".btn_event_fermer");
 
 btnEvent.addEventListener('click', ()=> {
-    containerAProposDeMoi.classList.toggle("showAProposDemoi_p");
-    imgAuteur.classList.toggle("show_img");
+    containerAProposDeMoi.classList.add("showAProposDemoi_p");
+    imgAuteur.classList.add("show_img");
     btnEvent.style.display = "none";
     btn_event_fermer.style.display = "block";
 });
 btn_event_fermer.addEventListener('click', ()=> {
-    containerAProposDeMoi.classList.toggle("showAProposDemoi_p");
-    imgAuteur.classList.toggle("show_img");
+    containerAProposDeMoi.classList.remove("showAProposDemoi_p");
+    imgAuteur.classList.remove("show_img");
     btn_event_fermer.style.display = "none";
     btnEvent.style.display = "block";
 })
