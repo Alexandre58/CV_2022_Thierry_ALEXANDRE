@@ -1,5 +1,8 @@
-# CV Thierry ALEXANDRE
+## CV Thierry ALEXANDRE
 
-## 2022 
+[![logo](./images/thierryGrossePiece.jpg)](#)
 
-## HTML/SCSS/JS
+* Photo fabrication pot de jardin dans l'atelier de la vrille à St Amand en Puisaye (58)
+* 2022 
+
+* HTML/SCSS/JS
