@@ -1,11 +1,4 @@
-/**
- * function
- */
-function entrainement(operation) {
-  console.log(`Aujourd'hui j'ai fait ${operation}`);
-}
-entrainement("Une belle action");
-entrainement("la vaiselle !!");
+
 /***
  * event show image
  */
@@ -13,7 +6,19 @@ const btnEvent = document.querySelector(".btn_event");
 const imgAuteur = document.querySelector("#imgAuteur");
 const containerAProposDeMoi = document.querySelector(".aProposDemoi_p");
 const btn_event_fermer = document.querySelector(".btn_event_fermer");
+//show photo experiences professionneles
+const developpeurWeb = document.querySelector(".developpeurWeb"); 
+const developpeurWebAffichageImage = document.querySelector(".developpeurWebAffichageImage")
+const tourneur_image_ouvrir = document.querySelector(".tourneur_image_ouvrir");
+const tournageGrossePiecesffichageImage = document.querySelector(".tournageGrossePiecesffichageImage");
+const tournageFormationAffichageImage = document.querySelector(".tournageFormationAffichageImage");
+const formationPoterie = document.querySelector(".formationPoterie");
+const soudure = document.querySelector(".soudure");
+const soudure_afficher_image = document.querySelector(".soudure_afficher_image");
 
+
+
+//look/add/close a propos de moi
 btnEvent.addEventListener("click", () => {
   containerAProposDeMoi.classList.add("showAProposDemoi_p");
   imgAuteur.classList.add("show_img");
@@ -26,19 +31,19 @@ btn_event_fermer.addEventListener("click", () => {
   btn_event_fermer.style.display = "none";
   btnEvent.style.display = "block";
 });
-/**
- * event horizontal vertical fromscratch video js 46mn environ
- */
-/*
+//show photo experiences professionneles
+developpeurWeb.addEventListener("click", ()=> {
+  developpeurWebAffichageImage.classList.toggle("developpeurWebAffichageImage_flex");
+})
+tourneur_image_ouvrir.addEventListener("click", ()=> {
+  tournageGrossePiecesffichageImage.classList.toggle("developpeurWebAffichageImage_flex");
+})
+formationPoterie.addEventListener("click", ()=> {
+  tournageFormationAffichageImage.classList.toggle("developpeurWebAffichageImage_flex");
+})
+soudure.addEventListener("click", ()=> {
+  soudure_afficher_image.classList.toggle("developpeurWebAffichageImage_flex");
+})
 
-const containerMouseEvent = document.querySelector('.container_mouseEvent');
-const span_horizontal = document.querySelector('.span_horizontal');
-const span_vertical = document.querySelector('.span_vertical');
 
-containerMouseEvent.addEventListener('mousemove', (e)=> {
-    console.log(e);
-    span_horizontal.innerHTML = e.x;
-    span_vertical.innerHTML = e.y;
-    containerMouseEvent.style.marginLeft = e.x / window.innerWidth * 100 + "%";
-});
-*/
+
