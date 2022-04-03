@@ -301,12 +301,12 @@ body .container_sections .container_competences_experiences {
   margin: 1em auto;
 }
 
-body .container_sections .container_competences_experiences .developpeurWeb:hover, body .container_sections .container_competences_experiences .tourneur_image_ouvrir:hover, body .container_sections .container_competences_experiences .formationPoterie:hover, body .container_sections .container_competences_experiences .soudure:hover {
+body .container_sections .container_competences_experiences .developpeurWeb:hover, body .container_sections .container_competences_experiences .tourneur_image_ouvrir:hover, body .container_sections .container_competences_experiences .formationPoterie:hover, body .container_sections .container_competences_experiences .formationPoterie2:hover, body .container_sections .container_competences_experiences .soudure:hover {
   font-size: 1.1em;
   cursor: pointer;
 }
 
-body .container_sections .container_competences_experiences .developpeurWebAffichageImage, body .container_sections .container_competences_experiences .tournageGrossePiecesffichageImage, body .container_sections .container_competences_experiences .tournageFormationAffichageImage, body .container_sections .container_competences_experiences .soudure_afficher_image {
+body .container_sections .container_competences_experiences .developpeurWebAffichageImage, body .container_sections .container_competences_experiences .tournageGrossePiecesffichageImage, body .container_sections .container_competences_experiences .tournageFormationAffichageImage, body .container_sections .container_competences_experiences .tournageFormationAffichageImage2, body .container_sections .container_competences_experiences .soudure_afficher_image {
   display: none;
 }
 
