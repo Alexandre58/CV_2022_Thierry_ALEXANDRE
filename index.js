@@ -31,33 +31,37 @@ const soudure = document.querySelector(".soudure");
 const soudure_afficher_image = document.querySelector(
   ".soudure_afficher_image"
 );
-//color theme
+//color theme variable
 const dark_light_theme = document.querySelector("#dark_light_theme");
 const container_main = document.querySelector(".container_main");
 const container_header = document.querySelector(".container_header");
 const javascrip_Container = document.querySelector(".javascrip_Container");
-const event_container  = document.querySelector(".event_container");
-const container_sections  = document.querySelector(".container_sections");
-const container_footer  = document.querySelector(".container_footer");
-const btn_event  = document.querySelector(".btn_event");
+const event_container = document.querySelector(".event_container");
+const container_sections = document.querySelector(".container_sections");
+const container_footer = document.querySelector(".container_footer");
+const btn_event = document.querySelector(".btn_event");
+const auteur_event = document.querySelector(".auteur_event");
+
+/**
+ * color theme function
+ */
+
+  dark_light_theme.addEventListener("change", () => {
+    document.body.classList.toggle("container_main_theme");
+    container_header.classList.toggle("container_header_theme");
+    javascrip_Container.classList.toggle("javascrip_Container_theme");
+    event_container.classList.toggle("event_container_theme");
+    container_sections.classList.toggle("container_sections_theme");
+    container_footer.classList.toggle("container_footer_theme");
+    btn_event.classList.toggle("btn_event_theme");
+    btn_event_fermer.classList.toggle("btn_event_fermer_theme");
+    auteur_event.classList.toggle("auteur_event_theme");
+  });
 
 
 
 
-//color them
-dark_light_theme.addEventListener('change', ()=>{
-  console.log("yes");
-    document.body.classList.toggle('container_main_theme');
-    container_header.classList.toggle('container_header_theme');
-    javascrip_Container.classList.toggle('javascrip_Container_theme');
-    event_container.classList.toggle('event_container_theme');
-    container_sections.classList.toggle('container_sections_theme');
-    container_footer.classList.toggle('container_footer_theme');
-    btn_event.classList.toggle('btn_event_theme');
-    btn_event_fermer.classList.toggle('btn_event_fermer_theme');
-   
-})
-//look/add/close a propos de moi
+//look/add/close a propos de moi function
 btnEvent.addEventListener("click", () => {
   containerAProposDeMoi.classList.add("showAProposDemoi_p");
   imgAuteur.classList.add("show_img");

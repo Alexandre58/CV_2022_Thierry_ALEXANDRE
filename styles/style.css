@@ -66,12 +66,14 @@ h4 {
 
 .container_main_theme {
   background: url(../images/body-background.jpg) !important;
+  -webkit-animation-name: urlBackgroundTheme !important;
+          animation-name: urlBackgroundTheme !important;
 }
 
 .container_main_theme .event_container_theme {
   -webkit-box-shadow: 1px 1px 41px -5px rgba(247, 243, 243, 0.8) !important;
   box-shadow: 1px 1px 41px -5px rgba(247, 243, 243, 0.8) !important;
-  color: #c8c6c6;
+  color: #c8c6c6 !important;
   background-color: #3f3d3d;
   max-width: 995px !important;
 }
@@ -107,6 +109,7 @@ body .container_header .javascrip_Container {
 body .container_header_theme {
   background-color: #3f3d3d;
   background-image: none !important;
+  color: #c8c6c6 !important;
 }
 
 body .container_header_theme .javascrip_Container_theme {
@@ -155,6 +158,10 @@ body .container_main .event_container .container_aProposDeMoi {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0.5em;
+}
+
+body .container_main .event_container .auteur_event_theme {
+  color: #a0a0a0 !important;
 }
 
 body .container_main .event_container .auteur_event {
@@ -363,7 +370,7 @@ body .container_sections .container_competences_experiences .developpeurWebAffic
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px;
-  border: 5px solid white;
+  border: 2px solid white;
 }
 
 body .container_sections .container_competences_experiences ul li {
