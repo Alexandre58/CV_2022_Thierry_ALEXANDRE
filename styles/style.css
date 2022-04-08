@@ -64,6 +64,18 @@ h4 {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.container_main_theme {
+  background: url(../images/body-background.jpg) !important;
+}
+
+.container_main_theme .event_container_theme {
+  -webkit-box-shadow: 1px 1px 41px -5px rgba(247, 243, 243, 0.8) !important;
+  box-shadow: 1px 1px 41px -5px rgba(247, 243, 243, 0.8) !important;
+  color: #c8c6c6;
+  background-color: #3f3d3d;
+  max-width: 995px !important;
+}
+
 body {
   font-family: "Roboto Condensed", sans-serif;
   margin: 0;
@@ -90,6 +102,15 @@ body .container_header .javascrip_Container {
   text-align: center;
   opacity: 0.7;
   letter-spacing: 1.5em;
+}
+
+body .container_header_theme {
+  background-color: #3f3d3d;
+  background-image: none !important;
+}
+
+body .container_header_theme .javascrip_Container_theme {
+  color: #c8c6c6;
 }
 
 body .container_main {
@@ -235,6 +256,16 @@ body .container_main .event_container .show_img {
   }
 }
 
+body .container_main .btn_event_theme {
+  background-color: #3f3d3d !important;
+  color: #c8c6c6 !important;
+}
+
+body .container_main .btn_event_fermer_theme {
+  background-color: #3f3d3d !important;
+  color: #c8c6c6 !important;
+}
+
 body .container_main .btn_event {
   margin-left: 10%;
   border-radius: 15px;
@@ -254,7 +285,7 @@ body .container_main .btn_event_fermer {
   color: #868383;
   border: none;
   margin-top: 0.1em;
-  padding: 0;
+  padding: 0.1em;
 }
 
 body .container_main .btn_event:hover,
@@ -263,6 +294,11 @@ body .container_main .btn_event_fermer:hover {
           transform: scale(1.2);
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+body .container_sections_theme {
+  color: #c8c6c6;
+  background-color: #626060;
 }
 
 body .container_sections {
@@ -301,12 +337,20 @@ body .container_sections .container_competences_experiences {
   margin: 1em auto;
 }
 
-body .container_sections .container_competences_experiences .developpeurWeb:hover, body .container_sections .container_competences_experiences .tourneur_image_ouvrir:hover, body .container_sections .container_competences_experiences .formationPoterie:hover, body .container_sections .container_competences_experiences .formationPoterie2:hover, body .container_sections .container_competences_experiences .soudure:hover {
+body .container_sections .container_competences_experiences .developpeurWeb:hover,
+body .container_sections .container_competences_experiences .tourneur_image_ouvrir:hover,
+body .container_sections .container_competences_experiences .formationPoterie:hover,
+body .container_sections .container_competences_experiences .formationPoterie2:hover,
+body .container_sections .container_competences_experiences .soudure:hover {
   font-size: 1.1em;
   cursor: pointer;
 }
 
-body .container_sections .container_competences_experiences .developpeurWebAffichageImage, body .container_sections .container_competences_experiences .tournageGrossePiecesffichageImage, body .container_sections .container_competences_experiences .tournageFormationAffichageImage, body .container_sections .container_competences_experiences .tournageFormationAffichageImage2, body .container_sections .container_competences_experiences .soudure_afficher_image {
+body .container_sections .container_competences_experiences .developpeurWebAffichageImage,
+body .container_sections .container_competences_experiences .tournageGrossePiecesffichageImage,
+body .container_sections .container_competences_experiences .tournageFormationAffichageImage,
+body .container_sections .container_competences_experiences .tournageFormationAffichageImage2,
+body .container_sections .container_competences_experiences .soudure_afficher_image {
   display: none;
 }
 
@@ -356,7 +400,12 @@ body .container_sections .section_contact_formation_information .section_article
 body .container_sections .section_contact_formation_information .section_article_contact p,
 body .container_sections .section_contact_formation_information .section_article_information p {
   padding: 1em;
-  color: aliceblue;
+  color: #c8c6c6;
+}
+
+body .container_footer_theme {
+  background-image: none !important;
+  background-color: #3f3d3d !important;
 }
 
 body .container_footer {
@@ -384,14 +433,71 @@ body .container_footer .container_footer_div {
       align-content: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
-body .container_footer .title_auteur_footer,
-body .container_footer .title_auteur_footer_date {
+body .container_footer .container_footer_div .title_auteur_footer,
+body .container_footer .container_footer_div .title_auteur_footer_date {
   letter-spacing: 0.6em;
   color: rgba(245, 231, 231, 0.712);
   font-family: "Roboto Condensed", sans-serif;
+}
+
+body .container_footer .container_footer_div .toggle {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container_footer .container_footer_div .toggle .checkBox_footer {
+  display: none;
+}
+
+body .container_footer .container_footer_div .toggle .checkBox_footer_label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.3em;
+          column-gap: 0.3em;
+  cursor: pointer;
+  color: white;
+  background: #929090;
+  border-radius: 50px;
+  padding: 0.3em;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+body .container_footer .container_footer_div .toggle .ball {
+  background-color: #eee;
+  width: 22px;
+  height: 22px;
+  border-radius: 50px;
+  position: absolute;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.19, 0.81, 0.83, 0.54);
+  transition: -webkit-transform 0.4s cubic-bezier(0.19, 0.81, 0.83, 0.54);
+  transition: transform 0.4s cubic-bezier(0.19, 0.81, 0.83, 0.54);
+  transition: transform 0.4s cubic-bezier(0.19, 0.81, 0.83, 0.54), -webkit-transform 0.4s cubic-bezier(0.19, 0.81, 0.83, 0.54);
+}
+
+body .container_footer .container_footer_div .toggle .checkBox_footer:checked + .checkBox_footer_label .ball {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 @media screen and (max-width: 975px) {
