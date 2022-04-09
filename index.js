@@ -41,36 +41,46 @@ const container_sections = document.querySelector(".container_sections");
 const container_footer = document.querySelector(".container_footer");
 const btn_event = document.querySelector(".btn_event");
 const auteur_event = document.querySelector(".auteur_event");
-
+const container_competences_experiences = document.querySelector(
+  ".container_competences_experiences"
+);
 /**
  * color theme function
  */
 
-  dark_light_theme.addEventListener("change", () => {
-    document.body.classList.toggle("container_main_theme");
-    container_header.classList.toggle("container_header_theme");
-    javascrip_Container.classList.toggle("javascrip_Container_theme");
-    event_container.classList.toggle("event_container_theme");
-    container_sections.classList.toggle("container_sections_theme");
-    container_footer.classList.toggle("container_footer_theme");
-    btn_event.classList.toggle("btn_event_theme");
-    btn_event_fermer.classList.toggle("btn_event_fermer_theme");
-    auteur_event.classList.toggle("auteur_event_theme");
-  });
-
-
-
+dark_light_theme.addEventListener("change", () => {
+  document.body.classList.toggle("container_main_theme");
+  container_header.classList.toggle("container_header_theme");
+  javascrip_Container.classList.toggle("javascrip_Container_theme");
+  event_container.classList.toggle("event_container_theme");
+  container_sections.classList.toggle("container_sections_theme");
+  container_footer.classList.toggle("container_footer_theme");
+  btn_event.classList.toggle("btn_event_theme");
+  btn_event_fermer.classList.toggle("btn_event_fermer_theme");
+  auteur_event.classList.toggle("auteur_event_theme");
+  container_competences_experiences.classList.toggle(
+    "container_competences_experiences_theme"
+  );
+});
 
 //look/add/close a propos de moi function
 btnEvent.addEventListener("click", () => {
   containerAProposDeMoi.classList.add("showAProposDemoi_p");
   imgAuteur.classList.add("show_img");
+  //button open
   btnEvent.style.display = "none";
   btn_event_fermer.style.display = "block";
 });
 btn_event_fermer.addEventListener("click", () => {
-  containerAProposDeMoi.classList.remove("showAProposDemoi_p");
-  imgAuteur.classList.remove("show_img");
+  containerAProposDeMoi.classList.remove("aProposDemoi_p");
+  containerAProposDeMoi.classList.replace(
+    "showAProposDemoi_p",
+    "aProposDemoi_p_close"
+  );
+  //image
+  imgAuteur.classList.remove("img_auteur");
+  imgAuteur.classList.replace("show_img", "img_auteur_close");
+  //button close
   btn_event_fermer.style.display = "none";
   btnEvent.style.display = "block";
 });
