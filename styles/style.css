@@ -495,6 +495,32 @@ body .container_sections .container_competences_experiences .developpeurWebAffic
      object-fit: cover;
   border-radius: 15px;
   border: 2px solid white;
+  -webkit-animation-name: clickduration;
+          animation-name: clickduration;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes clickduration {
+  from {
+    width: 0px;
+    height: 0px;
+  }
+  to {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@keyframes clickduration {
+  from {
+    width: 0px;
+    height: 0px;
+  }
+  to {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 body .container_sections .container_competences_experiences ul li {
@@ -651,6 +677,9 @@ body .container_footer .container_footer_div .toggle .checkBox_footer:checked + 
 
 /****************************************fin theme regul**********/
 @media screen and (max-width: 975px) {
+  .container_sections_theme {
+    background-color: transparent !important;
+  }
   .btn_event_fermer {
     margin-left: 48% !important;
   }
